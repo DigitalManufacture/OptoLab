@@ -31,7 +31,7 @@ hard = [];
 
 if isempty( glass_names_sellmeier )
     qwe = '';
-    fp = fopen( 'Sellmeier.glass.refr', 'r' );
+    fp = fopen( 'Resources/Sellmeier.glass.refr', 'r' );
     while ~feof( fp )
         qwe = str2mat( qwe, fgetl( fp ) );
     end

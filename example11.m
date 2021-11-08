@@ -5,6 +5,8 @@ function example11()
 % Copyright: Yury Petrov, 2016
 %
 
+addpath('Modules');
+
 bench = Bench;
 
 eye = Eye;

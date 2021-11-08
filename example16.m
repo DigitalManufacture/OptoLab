@@ -5,6 +5,8 @@ function example16()
 % Copyright: Yury Petrov, 2018
 %
 
+addpath('Modules');
+
 nAngles = 100; % angular resolution of the STL export
 flangeHeight = 2;
 

@@ -5,6 +5,8 @@ function example2()
 % Copyright: Yury Petrov, 2016
 %
 
+addpath('Modules');
+
 % demonstrate resolution dependence on the pupil diameter
 tic;
 disp( 'Calculating...' );

@@ -7,6 +7,8 @@ function example12()
 % Copyright: Yury Petrov, 2016
 %
 
+addpath('Modules');
+
 Df = 40; % front diameters
 Db = 50; % back diameters
 Rf = -50; % front radius of curvature

@@ -6,6 +6,8 @@ function example13()
 % Copyright: Yury Petrov, 2016
 %
 
+addpath('Modules');
+
 % create a container for optical elements (Bench class)
 bench = Bench;
 hD = 15; % diameter of the hole in the concave spherical mirror
