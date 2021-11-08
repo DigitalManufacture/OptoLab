@@ -1,18 +1,16 @@
-# Optometrika
+# OptoLab
 
-![optometrika](https://user-images.githubusercontent.com/46988982/51661552-0c009200-1f66-11e9-8d38-79f35f6ac8d8.png)
+![optolab](https://user-images.githubusercontent.com/46988982/51661552-0c009200-1f66-11e9-8d38-79f35f6ac8d8.png)
 
 ## Overview
 
-Optometrika MATLAB library implements analytical and iterative ray tracing approximation to optical image formation using Snell’s and Fresnel’s laws of refraction and reflection.
+OptoLab is a fork of the Optometrika MATLAB library, which implements analytical and iterative ray tracing approximation to optical image formation using Snell’s and Fresnel’s laws of refraction and reflection.
 
 Currently, the library implements refractive and reflective general surfaces, aspheric (conic) surfaces with astigmatism, Fresnel surfaces, cones and cylinders (elliptic too), planes, circular and ring-shaped apertures, rectangular flat screens, spheroidal screens, and a realistic model of the human eye with accommodating lens and spheroidal retina. See example*.m files for examples of ray tracing in general (user-defined shape) lenses, aspheric lenses, Fresnel lenses, prisms, mirrors, and human eye. 
 
 The library traces refracted rays, including intensity loss at the refractive surface. Reflected rays are currently traced for mirrors and also for a single total internal reflexion or double refraction, if it happens. Note that the Bench class object is not a real physical bench, it is only an ordered array of optical elements, and it is your responsibility to arrange optical objects in the right order. In particular, if you need to trace rays passing through the same object multiple times, you have to add the object multiple times to the bench array in the order the object is encountered by the rays. For example, double refraction/reflection for cylindrical and conical surfaces can be calculated by adding the surface twice to the bench (see example10). 
 
 The library is compact and fast. It was written using Matlab classes and is fully vectorized. It takes about 2 seconds to trace 100,000 rays through an external lens and the human eye (8 optical surfaces) on a 3 GHz Intel Core i7 desktop. Fresnel lens tracing is somewhat slower due to looping through the Fresnel cones describing the lens surface. Tracing through user-defined (general) surfaces is significantly slower due to iterative search of ray intersections with the surface. 
-
-Thank you for downloading Optometrika, enjoy it!
 
 ## List of examples:
 
