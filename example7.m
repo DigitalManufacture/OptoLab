@@ -5,8 +5,6 @@ function example7()
 % Copyright: Yury Petrov, 2017
 %
 
-addpath('Modules');
-
 % create a container for optical elements (Bench class)
 bench = Bench;
 
